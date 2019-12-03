@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { MyAccountComponent } from './components/my-account/my-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,
