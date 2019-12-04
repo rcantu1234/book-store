@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { BookComponent } from './book/book.component';
 import { BookService } from './book.service';
+import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    BookComponent
+    BookComponent,
+    AddBookComponent
   ],
   imports: [
     BrowserModule,
