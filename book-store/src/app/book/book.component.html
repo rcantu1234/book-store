@@ -1,0 +1,20 @@
+<br><br>
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Book ID</th>
+        <th>Book Title</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.price }}</td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+</div>

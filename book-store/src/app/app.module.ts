@@ -7,22 +7,27 @@ import { AppComponent } from './app.component';
 import 'hammerjs';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
-import { MyAccountComponent } from './components/my-account/my-account.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { BookComponent } from './book/book.component';
+import { BookService } from './book.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    MyAccountComponent
+    BookComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-    // MaterialModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ 
+    BookService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
