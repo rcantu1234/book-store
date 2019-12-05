@@ -10,23 +10,24 @@ import { catchError } from 'rxjs/operators';
 })
 export class AddBookComponent implements OnInit {
   temp: Book = new Book();
-  error: string; 
+  error: string;
 
   constructor(private service: BookService) { }
 
   ngOnInit() {
   }
-  
+
   addBook() {
     this.service.addBook(this.temp)
-    // .pipe(
-    //   catchError((err, caught) => {
-    //     console.log(err);
-    //     this.error = err.messages;
-    //     return [];
-    //   })
-    // )
+    .pipe(
+      catchError((err, caught) => {
+        console.log(err);
+        this.error = err.messages;
+        return [];
+      })
+    )
     .subscribe((response) => {
+      console.log('TESTING');
       console.log(response);
       this.temp = new Book();
     }, (error) => {

@@ -1,11 +1,18 @@
-<div>
-  <form>
-    Enter ID : <input type="text" [(ngModel)]="temp.id" name="id" /><br><br>
-    Enter Title : <input type="text" [(ngModel)]="temp.title" name="title" /><br><br>
-    Enter Author : <input type="text" [(ngModel)]="temp.author" name="author" />
-    <button (click)="addBook()">Add Book</button>
+  <br><br>
+  <form (ngSubmit)="addBook()" width="50%">
+    <div class="form-group">
+        <label>Book Title</label>
+        <input [(ngModel)]="temp.title"
+        type="text" class="form-control"
+        placeholder="Book Title ..." name="bookTitle">
+        <label>Book Author</label>
+        <input [(ngModel)]="temp.author"
+        type="text" class="form-control"
+        placeholder="Book Author ..." name="bookAuthor">
+        <label>Book Price</label>
+        <input [(ngModel)]="temp.price"
+        type="text" class="form-control"
+        placeholder="Book Price ..." name="bookPrice">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Book</button>
   </form>
-</div>
-
-
-
