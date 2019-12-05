@@ -1,5 +1,5 @@
 [
-    {"id": 1, "title": "Cat in the Hat", "author": "Dr. Seuss", "price": 10},
-    {"id": 2, "title": "Some Book 1", "author": "John Doe", "price": 11},
-    {"id": 3, "title": "Some Book 2", "author": "Jane Doe", "price": 8}
+    {"id": 1, "avatar": "assets/cat_in_the_hat.jpeg", "title": "Cat in the Hat", "author": "Dr. Seuss", "price": 9.99, "url": "localhost:4200/cat-in-the-hat"},
+    {"id": 2, "avatar": "assets/van_halen.jpeg", "title": "Van Halen : A Visual History : 1978 - 1084", "author": "Neil Zlozower", "price": 10.09, "url": "localhost:4200/cat-in-the-hat"},
+    {"id": 3, "avatar": "assets/superman.jpeg", "title": "Superman: The Return of Superman", "author": "Dan Jurgens", "price": 16.19, "url": "localhost:4200/cat-in-the-hat"}
 ]

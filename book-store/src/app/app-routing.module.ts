@@ -1,3 +1,4 @@
+import { BookDetailsComponent } from './book-details/book-details.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'add-book', component: AddBookComponent
+  },
+  {
+    path: 'cat-in-the-hat', component: BookDetailsComponent
   }
 ];
 

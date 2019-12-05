@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookComponent } from './book/book.component';
 import { BookService } from './book.service';
 import { AddBookComponent } from './add-book/add-book.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddBookComponent } from './add-book/add-book.component';
     HomeComponent,
     NavBarComponent,
     BookComponent,
-    AddBookComponent
+    AddBookComponent,
+    BookDetailsComponent
   ],
   imports: [
     BrowserModule,
