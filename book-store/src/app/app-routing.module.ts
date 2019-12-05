@@ -1,3 +1,6 @@
+import { SupermanComponent } from './superman/superman.component';
+import { VanHalenComponent } from './van-halen/van-halen.component';
+import { CatInTheHatComponent } from './cat-in-the-hat/cat-in-the-hat.component';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,7 +19,13 @@ const routes: Routes = [
     path: 'add-book', component: AddBookComponent
   },
   {
-    path: 'cat-in-the-hat', component: BookDetailsComponent
+    path: 'cat-in-the-hat', component: CatInTheHatComponent
+  },
+  {
+    path: 'van-halen', component: VanHalenComponent
+  },
+  {
+    path: 'superman', component: SupermanComponent
   }
 ];
 

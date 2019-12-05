@@ -15,9 +15,10 @@
         <td>{{ book.id }}</td>
         <td>
         <div class="col-xs-4">
+            <a class="nav-link" routerLink="{{book.url}}">
             <img src="{{ book.avatar }}" class="img-responsive right"
             style="width: 100px; image-rendering: pixelated; z-index: 1;"
-            alt="logo image">
+            alt="logo image"></a>
         </div>
         </td>
         <!-- <td>{{ book.avatar }}</td> -->
@@ -34,11 +35,9 @@
 <div *ngIf="selectedBook">
 
   <h2>{{selectedBook.title | uppercase}}</h2>
-  <!-- <div><span>id : </span>{{selectedBook.id}}</div> -->
 
   <div><a class="nav-link" routerLink="{{selectedBook.url}}"></a></div>
-  <!-- <div><span>id : </span>{{selectedBook.id}}</div> -->
-  <div><span>Author : </span>{{selectedBook.author}}</div>
-  <div><span>Price : </span>{{selectedBook.price}}</div>
+  <div><h2><span>Author : </span>{{selectedBook.author}}</h2></div>
+  <div><h2><span>Price : </span>{{selectedBook.price}}</h2></div>
 
 </div>
