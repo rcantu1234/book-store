@@ -13,6 +13,7 @@ export class Book {
   author: string;
   price: number;
   url: string;
+  total: number;
 
   constructor() {
   };

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BookService } from '../book.service';
 import { Book } from '../models/book';
@@ -11,7 +11,7 @@ import { Book } from '../models/book';
 export class BookComponent implements OnInit {
   books: any;
 
-  total: number = 0;
+  total = 0;
 
   selectedBook: Book;
 
@@ -28,5 +28,9 @@ export class BookComponent implements OnInit {
   onPurchaseBook(book: Book) {
     this.total = this.total + book.price;
     console.log(this.total);
+  }
+
+  sumValue(): number {
+    return this.total;
   }
 }
