@@ -1,6 +1,6 @@
   <br><br>
-  <form (ngSubmit)="addBook()">
-    <div class="form-group">
+  <form (ngSubmit)="addBook()" class="form-horizontal">
+    <div class="form-group col-xs-3">
         <label>Book Title</label>
         <input [(ngModel)]="temp.title"
         type="text" class="form-control"
