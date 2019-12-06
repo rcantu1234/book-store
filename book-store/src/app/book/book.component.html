@@ -2,16 +2,18 @@
 <div>
   <table class="table table-striped">
     <thead>
-      <tr>
+      <tr style="text-align: center;">
         <th>Book ID</th>
         <th>Book Image</th>
         <th>Book Title</th>
         <th>Book Author</th>
         <th>Book Price</th>
+        <th>Details</th>
+        <th>Purchase</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let book of books" (click)="onSelectBook(book)">
+      <tr *ngFor="let book of books" style="text-align: center;">
         <td>{{ book.id }}</td>
         <td>
         <div class="col-xs-4">
@@ -21,23 +23,22 @@
             alt="logo image"></a>
         </div>
         </td>
-        <!-- <td>{{ book.avatar }}</td> -->
         <td>{{ book.title }}</td>
         <td>{{ book.author }}</td>
         <td>${{ book.price }}</td>
-        <button>Details</button>
-        <button>Purchase</button>
+        <td><button (click)="onSelectBook(book)">Details</button></td>
+        <td><button (click)="onPurchaseBook(book)">Purchase</button></td>
       </tr>
     </tbody>
     <tfoot></tfoot>
   </table>
 
-<div *ngIf="selectedBook">
+<div *ngIf="selectedBook" style="margin-left: 25px;">
 
   <h2>{{selectedBook.title | uppercase}}</h2>
 
-  <div><a class="nav-link" routerLink="{{selectedBook.url}}"></a></div>
-  <div><h3><span>Author : </span>{{selectedBook.author}}</h3></div>
-  <div><h3><span>Price : $</span>{{selectedBook.price}}</h3></div>
+  <!-- <div><a class="nav-link" routerLink="{{selectedBook.url}}"></a></div> -->
+  <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
+  <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
 
 </div>

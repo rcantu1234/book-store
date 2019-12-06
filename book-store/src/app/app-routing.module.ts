@@ -1,3 +1,4 @@
+import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
 import { SupermanComponent } from './superman/superman.component';
 import { VanHalenComponent } from './van-halen/van-halen.component';
 import { CatInTheHatComponent } from './cat-in-the-hat/cat-in-the-hat.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'superman', component: SupermanComponent
+  },
+  {
+    path: 'shoppingCart', component: BookCheckoutComponent
   }
 ];
 

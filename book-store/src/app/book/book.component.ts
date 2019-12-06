@@ -11,6 +11,8 @@ import { Book } from '../models/book';
 export class BookComponent implements OnInit {
   books: any;
 
+  total: number = 0;
+
   selectedBook: Book;
 
   constructor(private service: BookService) { }
@@ -21,5 +23,10 @@ export class BookComponent implements OnInit {
 
   onSelectBook(book: Book): void {
     this.selectedBook = book;
+  }
+
+  onPurchaseBook(book: Book) {
+    this.total = this.total + book.price;
+    console.log(this.total);
   }
 }
