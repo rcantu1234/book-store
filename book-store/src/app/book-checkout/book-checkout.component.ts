@@ -17,7 +17,7 @@ export class BookCheckoutComponent implements OnInit {
 
 book: Book;
 // tslint:disable-next-line: no-input-rename
-@Input('book') bookObj: Book;
+// @Input('book') bookObj: Book;
 
 
   // sum = 0;
