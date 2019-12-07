@@ -30,7 +30,7 @@ export class BookComponent implements OnInit {
     console.log(this.total);
   }
 
-  sumValue(): number {
-    return this.total;
-  }
+  // sumValue(): number {
+  //   return this.total;
+  // }
 }

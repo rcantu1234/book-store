@@ -33,6 +33,8 @@
     <tfoot></tfoot>
   </table>
 
+  <app-book-checkout [receivedTotal]="total"></app-book-checkout>
+
 <div *ngIf="selectedBook" style="margin-left: 25px;">
 
   <h2>{{selectedBook.title | uppercase}}</h2>
