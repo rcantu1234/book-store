@@ -16,23 +16,19 @@ export class BookCheckoutComponent implements OnInit {
   // sum = 0;
   @Input() receivedTotal;
   // tslint:disable-next-line: no-input-rename
-  // @Input('book') bookObj: Book;
+  @Input('book') bookObj: Book;
 
   constructor() { }
   // books: Book[] = [];
   ngOnInit() {
     // this.book = {
-      // id: this.bookObj.id,
-      // avatar: this.bookObj.avatar,
-      // title: this.bookObj.title,
-      // author: this.bookObj.author,
-      // price: this.bookObj.price,
-      // url: this.bookObj.url,
-      // total: this.bookObj.total
-
-      // this.books.push(new Book('TEST1', 'JOHN DOE');
-
-      // this.books.push(new Book('TEST2', 'JANE DOE');
+    //   id: this.bookObj.id,
+    //   avatar: this.bookObj.avatar,
+    //   title: this.bookObj.title,
+    //   author: this.bookObj.author,
+    //   price: this.bookObj.price,
+    //   url: this.bookObj.url,
+    //   total: this.bookObj.total
     // };
   }
 
