@@ -1,4 +1,4 @@
-// import { by } from 'protractor';
+import { by } from 'protractor';
 import { BookComponent } from './../book/book.component';
 import { Component, OnInit, Input } from '@angular/core';
 import { Book } from '../models/book';
@@ -10,27 +10,30 @@ import { Book } from '../models/book';
 })
 export class BookCheckoutComponent implements OnInit {
 
-  // bookComponent: BookComponent;
+  bookComponent: BookComponent;
 
-// VERY IMPORTANT TO SET BACK IF OBJECT DOESN'T WORK!!!!!!!!!
- @Input() receivedTotal: number;
-
-book: Book;
-// tslint:disable-next-line: no-input-rename
-// @Input('book') bookObj: Book;
-
-
+  book: any;
   // sum = 0;
+  @Input() receivedTotal;
+  // tslint:disable-next-line: no-input-rename
+  // @Input('book') bookObj: Book;
 
   constructor() { }
-
+  // books: Book[] = [];
   ngOnInit() {
     // this.book = {
-    //   id: this.bookObj.id,
-    //   avatar: this.bookObj.avatar,
-    //   title: this.bookObj.title,
-    //   author: this.bookObj.author
-    // }
+      // id: this.bookObj.id,
+      // avatar: this.bookObj.avatar,
+      // title: this.bookObj.title,
+      // author: this.bookObj.author,
+      // price: this.bookObj.price,
+      // url: this.bookObj.url,
+      // total: this.bookObj.total
+
+      // this.books.push(new Book('TEST1', 'JOHN DOE');
+
+      // this.books.push(new Book('TEST2', 'JANE DOE');
+    // };
   }
 
   // onPurchaseBook() {
