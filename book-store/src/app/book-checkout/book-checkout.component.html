@@ -1,6 +1,6 @@
-<div>
-  <h2>Book Checkout Component</h2>
-  {{ receivedTotal }}
+<div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+  <h2>TOTAL</h2>
+  ${{ receivedTotal | number: '0.0-2' }}
 
 
   <!-- <button (click)="onPurchaseBook()">Click Me!!!</button> -->

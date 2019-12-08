@@ -16,7 +16,7 @@ export class BookCheckoutComponent implements OnInit {
   // sum = 0;
   @Input() receivedTotal;
   // tslint:disable-next-line: no-input-rename
-  @Input('book') bookObj: Book;
+  // @Input('book') bookObj: Book;
 
   constructor() { }
   // books: Book[] = [];
