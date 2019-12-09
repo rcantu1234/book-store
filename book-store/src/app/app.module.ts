@@ -29,7 +29,7 @@ import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
     CatInTheHatComponent,
     VanHalenComponent,
     SupermanComponent,
-    BookCheckoutComponent
+    BookCheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,7 @@ import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ 
+  providers: [
     BookService
   ],
   bootstrap: [AppComponent]

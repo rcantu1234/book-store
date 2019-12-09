@@ -1,18 +1,48 @@
-<br><br>
-  <form (ngSubmit)="addBook()" class="form-horizontal">
-    <div class="form-group col-xs-3">
-        <label>Book Title</label>
-        <input [(ngModel)]="temp.title"
-        type="text" class="form-control"
-        placeholder="Book Title ..." name="bookTitle">
-        <label>Book Author</label>
-        <input [(ngModel)]="temp.author"
-        type="text" class="form-control"
-        placeholder="Book Author ..." name="bookAuthor">
-        <label>Book Price</label>
-        <input [(ngModel)]="temp.price"
-        type="text" class="form-control"
-        placeholder="Book Price ..." name="bookPrice">
+<div id="login">
+    <h3 class="text-center text-white pt-5">Login form</h3>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" action="" method="post">
+                        <h3 class="text-center text-info">Add A Book</h3>
+                        <div class="form-group">
+                            <label for="title" class="text-info">Title:</label><br>
+                            <input type="text"
+                            name="title"
+                            id="title"
+                            class="form-control"
+                            [(ngModel)]="temp.title"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="author" class="text-info">Author:</label><br>
+                            <input type="text"
+                            name="author"
+                            id="author"
+                            class="form-control"
+                            [(ngModel)]="temp.author"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="text-info">Price:</label><br>
+                            <input type="text"
+                            name="price"
+                            id="price"
+                            class="form-control"
+                            [(ngModel)]="temp.price"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            <input type="submit" name="submit" class="btn btn-info btn-md" (click)="addBook()" value="Add Book">
+                        </div>
+                        <div id="register-link" class="text-right">
+                            <a href="#" class="text-info">Register here</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Add Book</button>
-  </form>
+</div>

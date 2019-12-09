@@ -1,4 +1,6 @@
-
+<div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+  <h2>TOTAL</h2>
+  <h4>${{ receivedTotal | number: '0.0-2' }}</h4>
 
 <p>book-checkout works!</p>
 <!-- Book book = new Book(); -->

@@ -14,9 +14,12 @@ export class BookComponent implements OnInit {
   // total used for local
   total = 0;
 
+  book: Book;
+
   selectedBook: Book;
 
-  constructor(private service: BookService) { }
+  constructor(private service: BookService) {
+  }
 
   ngOnInit() {
     this.service.getAllBooks().subscribe(data => this.books = data);
@@ -31,7 +34,7 @@ export class BookComponent implements OnInit {
     console.log(this.total);
   }
 
-  sumValue(): number {
-    return this.total;
-  }
+  // sumValue(): number {
+  //   return this.total;
+  // }
 }
