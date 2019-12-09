@@ -17,6 +17,7 @@ import { CatInTheHatComponent } from './cat-in-the-hat/cat-in-the-hat.component'
 import { VanHalenComponent } from './van-halen/van-halen.component';
 import { SupermanComponent } from './superman/superman.component';
 import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,9 @@ import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
     VanHalenComponent,
     SupermanComponent,
     BookCheckoutComponent,
+
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,

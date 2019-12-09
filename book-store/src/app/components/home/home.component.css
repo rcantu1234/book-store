@@ -17,3 +17,29 @@
 h1 {
   text-align: center;
 }
+
+section {
+  background-image: url('/assets/bookshelf.png');
+  width: 100vw;
+  height: 86vh;
+}
+
+
+
+.jumbotron {
+  color:darkgreen;
+  border-width: 10px;
+  border-style: solid;
+  border-color: darkgreen;
+  background-color: lightgray;
+  text-align: center;
+  margin-top: 9em;
+}
+
+.container {
+  margin: 0,  auto;
+  width: 40%;
+
+
+}
+
