@@ -31,7 +31,9 @@ import { LoginComponent } from './login/login.component';
     VanHalenComponent,
     SupermanComponent,
     BookCheckoutComponent,
+
     LoginComponent
+
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ 
+  providers: [
     BookService
   ],
   bootstrap: [AppComponent]
