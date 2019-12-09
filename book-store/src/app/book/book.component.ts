@@ -11,6 +11,7 @@ import { Book } from '../models/book';
 export class BookComponent implements OnInit {
   books: any;
 
+  // total used for local
   total = 0;
 
   book: Book;
