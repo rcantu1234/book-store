@@ -32,16 +32,12 @@
     </tbody>
     <tfoot></tfoot>
   </table>
-
   <!--  Receiving data from BookCheckoutComponent -->
-  <app-book-checkout [receivedTotal]="total"></app-book-checkout>
-
+  <app-book-checkout [id]="id" [avatar]="avatar" [receivedTotal]="total" [author]="author"
+  [title]="title" [price]="price" [url]="url"></app-book-checkout>
   <br>
-
   <div *ngIf="selectedBook" style="margin-left: 4em;">
-
     <h2>{{ selectedBook.title | uppercase }}</h2>
-
     <div class="col-xs-4">
         <img src="{{ selectedBook.avatar }}" class="img-responsive right"
         style="width: 100px; image-rendering: pixelated; z-index: 1;"
@@ -49,5 +45,4 @@
     </div>
     <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
     <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
-
   </div>
