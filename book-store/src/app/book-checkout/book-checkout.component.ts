@@ -22,7 +22,11 @@ export class BookCheckoutComponent implements OnInit {
   selectedBook: Book;
 
   @Input() receivedTotal;
-  @Input() receivedPrice;
+
+  // @Input() public id: number;
+  // @Input() public author: string;
+  // @Input() public title: string;
+  // @Input() public price: number;
 
   constructor(private service: BookService) { }
 
