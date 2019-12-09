@@ -1,7 +1,9 @@
-import { by } from 'protractor';
+import { BookService } from './../book.service';
 import { BookComponent } from './../book/book.component';
 import { Component, OnInit, Input } from '@angular/core';
 import { Book } from '../models/book';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-book-checkout',
@@ -13,30 +15,21 @@ export class BookCheckoutComponent implements OnInit {
   bookComponent: BookComponent;
 
   book: any;
-  // sum = 0;
-  @Input() receivedTotal;
-  // tslint:disable-next-line: no-input-rename
-  // @Input('book') bookObj: Book;
 
-  constructor() { }
-  // books: Book[] = [];
+  // selectedBook: Book()
+  selectedBook: Book;
+
+  @Input() receivedTotal;
+
+  constructor(private service: BookService) { }
+
   ngOnInit() {
-    // this.book = {
-    //   id: this.bookObj.id,
-    //   avatar: this.bookObj.avatar,
-    //   title: this.bookObj.title,
-    //   author: this.bookObj.author,
-    //   price: this.bookObj.price,
-    //   url: this.bookObj.url,
-    //   total: this.bookObj.total
-    // };
   }
 
-  // onPurchaseBook() {
-  //   this.sum = total;
-  //   return this.sum;
-  //   console.log(this.sum);
-  // }
+  // @Input()
+  onPurchaseBook(book: Book) {
+   return this.bookComponent.onPurchaseBook(book);
+  }
 
 
 }

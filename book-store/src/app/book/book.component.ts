@@ -18,9 +18,6 @@ export class BookComponent implements OnInit {
   selectedBook: Book;
 
   constructor(private service: BookService) {
-    // const book = new Book();
-    // this.book.id = 4;
-    // this.book.title = 'TEST';
   }
 
   ngOnInit() {

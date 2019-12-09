@@ -33,16 +33,20 @@
     <tfoot></tfoot>
   </table>
 
-  <!-- <app-book-checkout [book]="book"></app-book-checkout> -->
   <app-book-checkout [receivedTotal]="total"></app-book-checkout>
 
   <br>
 
   <div *ngIf="selectedBook" style="margin-left: 4em;">
 
-  <h2>{{selectedBook.title | uppercase}}</h2>
+    <h2>{{ selectedBook.title | uppercase }}</h2>
 
-  <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
-  <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
+    <div class="col-xs-4">
+        <img src="{{ selectedBook.avatar }}" class="img-responsive right"
+        style="width: 100px; image-rendering: pixelated; z-index: 1;"
+        alt="logo image">
+    </div>
+    <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
+    <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
 
-</div>
+  </div>
