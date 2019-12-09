@@ -16,10 +16,17 @@ export class BookCheckoutComponent implements OnInit {
 
   book: any;
 
+  books: Book[] = [];
+
   // selectedBook: Book()
   selectedBook: Book;
 
   @Input() receivedTotal;
+
+  // @Input() public id: number;
+  // @Input() public author: string;
+  // @Input() public title: string;
+  // @Input() public price: number;
 
   constructor(private service: BookService) { }
 
@@ -27,9 +34,9 @@ export class BookCheckoutComponent implements OnInit {
   }
 
   // @Input()
-  onPurchaseBook(book: Book) {
-   return this.bookComponent.onPurchaseBook(book);
-  }
+  // onPurchaseBook(book: Book) {
+  //  return this.books.push(book);
+  // }
 
 
 }

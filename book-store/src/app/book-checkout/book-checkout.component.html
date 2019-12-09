@@ -1,10 +1,42 @@
-<div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
-  <h2>TOTAL</h2>
-  <h4>${{ receivedTotal | number: '0.0-2' }}</h4>
+<!-- <div *ngIf="receivedTotal > 0"> -->
+  <div *ngIf="receivedTotal > 0">
+    <hr>
+    <!-- <table class="table table-striped">
+      <thead>
+        <tr style="text-align: center;">
+          <th>Book ID</th>
+          <th>Book Image</th>
+          <th>Book Title</th>
+          <th>Book Author</th>
+          <th>Book Price</th>
+          <th>Details</th>
+          <th>Purchase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books" style="text-align: center;">
+          <td>{{ id }}</td>
+          <td>
+         <div class="col-xs-4">
+              <a class="nav-link" routerLink="{{book.url}}">
+              <img src="{{ book.avatar }}" class="img-responsive right"
+              style="width: 100px; image-rendering: pixelated; z-index: 1;"
+              alt="logo image"></a>
+          </div> -->
+          <!-- </td>
+          <td>{{ title }}</td>
+          <td>{{ author }}</td>
+          <td>${{ price }}</td>
+          <td><button (click)="onPurchaseBook(book)">Remove</button></td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot> -->
+    <!-- </table>  -->
 
-<p>book-checkout works!</p>
-<!-- Book book = new Book(); -->
-<div>
-  <h1>TESTING AGAIN</h1>
-  <button (click)="onPurchaseBook()">Click Me!!!</button>
+  <div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+    <h2>TOTAL</h2>
+    <h4>${{ receivedTotal | number: '0.0-2' }}</h4>
+
+  </div>
+
 </div>
