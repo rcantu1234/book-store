@@ -33,12 +33,21 @@
     <tfoot></tfoot>
   </table>
 
-<div *ngIf="selectedBook" style="margin-left: 25px;">
+  <!--  Receiving data from BookCheckoutComponent -->
+  <app-book-checkout [receivedTotal]="total"></app-book-checkout>
 
-  <h2>{{selectedBook.title | uppercase}}</h2>
+  <br>
 
-  <!-- <div><a class="nav-link" routerLink="{{selectedBook.url}}"></a></div> -->
-  <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
-  <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
+  <div *ngIf="selectedBook" style="margin-left: 4em;">
 
-</div>
+    <h2>{{ selectedBook.title | uppercase }}</h2>
+
+    <div class="col-xs-4">
+        <img src="{{ selectedBook.avatar }}" class="img-responsive right"
+        style="width: 100px; image-rendering: pixelated; z-index: 1;"
+        alt="logo image">
+    </div>
+    <div><h4><span>Author : </span>{{selectedBook.author}}</h4></div>
+    <div><h5><span>Price : $</span>{{selectedBook.price}}</h5></div>
+
+  </div>
