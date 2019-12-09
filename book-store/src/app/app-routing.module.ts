@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
 import { SupermanComponent } from './superman/superman.component';
 import { VanHalenComponent } from './van-halen/van-halen.component';
@@ -10,6 +11,9 @@ import { BookComponent } from './book/book.component';
 import { AddBookComponent } from './add-book/add-book.component';
 
 const routes: Routes = [
+  {
+    path: '', redirectTo: 'login', pathMatch: 'full'
+  },
   {
    path: 'home', component: HomeComponent
   },
@@ -30,6 +34,9 @@ const routes: Routes = [
   },
   {
     path: 'shoppingCart', component: BookCheckoutComponent
+  },
+  {
+    path: 'login', component: LoginComponent
   }
 ];
 
