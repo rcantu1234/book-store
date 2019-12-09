@@ -12,7 +12,7 @@ import { AddBookComponent } from './add-book/add-book.component';
 
 const routes: Routes = [
   {
-    path: '', redirctTo: 'login', pathMatch: 'full'
+    path: '', redirectTo: 'login', pathMatch: 'full'
   },
   {
    path: 'home', component: HomeComponent
