@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Book } from '../models/book';
 
 @Component({
   selector: 'app-cat-in-the-hat',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatInTheHatComponent implements OnInit {
 
+  @Input() total;
+  // total = 0;
+
+  book: Book;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  // onPurchaseBook(book: Book) {
+  //   this.total = this.total + book.price;
+  //   console.log(this.total);
+  // }
 }

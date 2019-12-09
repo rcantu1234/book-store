@@ -31,9 +31,6 @@ export class BookComponent implements OnInit {
   onPurchaseBook(book: Book) {
     this.total = this.total + book.price;
     console.log(this.total);
+    this.books.push(book);
   }
-
-  // sumValue(): number {
-  //   return this.total;
-  // }
 }
