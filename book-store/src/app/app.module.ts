@@ -19,6 +19,7 @@ import { SupermanComponent } from './superman/superman.component';
 import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { LogoutComponent } from './logout/logout.component';
 
     LoginComponent,
 
-    LogoutComponent
+    LogoutComponent,
+
+    OrderComponent
 
   ],
   imports: [

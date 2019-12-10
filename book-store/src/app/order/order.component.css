@@ -1,0 +1,13 @@
+#order .container #order-row #order-column #order-box {
+  margin-top: 50px;
+  max-width: 600px;
+  height: 100% ;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#order .container #order-row #order-column #order-box #order-form {
+  padding: 20px;
+}
+#order .container #order-row #order-column #order-box #order-form #register-link {
+  margin-top: -85px;
+}

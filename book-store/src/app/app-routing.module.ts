@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BookComponent } from './book/book.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { LogoutComponent } from './logout/logout.component';
+import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,9 @@ const routes: Routes = [
   },
   {
     path: 'logout', component: LogoutComponent
+  },
+  {
+    path: 'order', component: OrderComponent
   }
 ];
 
