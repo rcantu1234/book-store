@@ -18,6 +18,7 @@ import { VanHalenComponent } from './van-halen/van-halen.component';
 import { SupermanComponent } from './superman/superman.component';
 import { BookCheckoutComponent } from './book-checkout/book-checkout.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { LoginComponent } from './login/login.component';
     SupermanComponent,
     BookCheckoutComponent,
 
-    LoginComponent
+    LoginComponent,
+
+    LogoutComponent
 
   ],
   imports: [

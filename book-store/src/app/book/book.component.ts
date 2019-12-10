@@ -16,6 +16,8 @@ export class BookComponent implements OnInit {
 
   book: Book;
 
+  title: string;
+
   selectedBook: Book;
 
   constructor(private service: BookService) {
@@ -32,6 +34,21 @@ export class BookComponent implements OnInit {
   onPurchaseBook(book: Book) {
     this.total = this.total + book.price;
     console.log(this.total);
-    // this.books.push(book);
+    //this.books.push(book);
+  }
+
+  search() {
+    if(this.title !== '') {
+      this.books = this.books.filter(res => {
+        return res.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
+      });
+    } else {
+      this.ngOnInit();
+    }
   }
 }
+
+// if(this.title != “”) {
+// } else {
+// 	this.books = books;
+// }
