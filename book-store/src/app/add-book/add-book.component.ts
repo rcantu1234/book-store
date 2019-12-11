@@ -28,10 +28,11 @@ export class AddBookComponent implements OnInit {
     )
     .subscribe((response) => {
       console.log('TESTING');
+      alert('You have added a book')
       console.log(response);
       this.temp = new Book();
     }, (error) => {
       console.log(error);
-    })
+    });
   }
 }

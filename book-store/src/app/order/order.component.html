@@ -3,7 +3,7 @@
         <div id="order-row" class="row justify-content-center align-items-center">
             <div id="order-column" class="col-md-6">
                 <div id="order-box" class="col-md-12">
-                  <h3 style="text-align: center;">Order Form</h3>
+                  <h3 style="text-align: center; margin-top: 2em;">Order Form</h3>
                     <form id="order-form" name="orderForm" class="form" action="" method="post">
                       <div class="form-group"> <!-- Full Name -->
                         <label for="full_name_id" class="control-label">Full Name</label>
@@ -78,7 +78,7 @@
                         </select>
                       </div>
                   </form>
-                  <h5 style="text-align: center;">Credit Card Information</h5>
+                  <h4 style="text-align: center;">Credit Card Information</h4><br />
                   <div class="Container_credit_card">
                       <div class="row ">
                           <div class="col-md-12">
@@ -93,26 +93,33 @@
                      <div class="col-md-3 col-sm-3 col-xs-3">
                               <span class="help-block text-muted small-font" >  Expiry Year</span>
                               <input type="text" class="form-control" id="year" name="year" [(ngModel)]="temp.year" placeholder="YY" />
-                          </div>
+                    </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <span class="help-block text-muted small-font" >  CCV</span>
                         <input type="text" class="form-control" id="ccv" name="ccv" [(ngModel)]="temp.ccv" placeholder="CCV" />
                     </div>
-                 </div>
+                 </div><br />
                  <div class="row ">
                           <div class="col-md-12 pad-adjust">
                               <input type="text" class="form-control" id="nameOnCard" name="nameOnCard" [(ngModel)]="temp.nameOnCard" placeholder="Name On The Card" />
                           </div>
-                      </div>
-                 <div class="row">
-            <div class="col-md-12 pad-adjust"><br /><br />
-                <div class="checkbox">
-                <label>
-                  <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
-                </label>
-              </div>
-            </div>
+                  </div><br />
+                  <!-- <div class="row"> -->
+                  <div >
+                    <div style="text-align: center;">
+                      <img src="/assets/mixedcards1.png" alt="credit cards"/>
+                    </div>
                  </div>
+                <!-- </div> -->
+                 <!-- <div class="row"> -->
+                  <div class="col-md-12 pad-adjust"><br /><br />
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
+                      </label>
+                    </div>
+                  </div>
+                 <!-- </div> -->
                    <div class="row ">
                         <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
                              <input type="submit"  class="btn btn-danger" (click)="onCancel()" value="CANCEL" />

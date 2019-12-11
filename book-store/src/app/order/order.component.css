@@ -11,3 +11,9 @@
 #order .container #order-row #order-column #order-box #order-form #register-link {
   margin-top: -85px;
 }
+
+img {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+}

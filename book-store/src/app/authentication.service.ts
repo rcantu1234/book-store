@@ -8,11 +8,15 @@ export class AuthenticationService {
     if (username === 'roel.cantu' && password === 'password') {
       sessionStorage.setItem('username', username);
       return true;
+    } else if (username === 'john.doe' && password === '123') {
+      sessionStorage.setItem('username', username)
+      return true;
     } else {
       alert('The username and password do not match!!!!');
       return false;
     }
   }
+
   isUserLoggedIn() {
     const user = sessionStorage.getItem('username');
     console.log(!(user === null));

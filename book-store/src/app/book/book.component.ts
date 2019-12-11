@@ -38,7 +38,7 @@ export class BookComponent implements OnInit {
   }
 
   search() {
-    if(this.title !== '') {
+    if (this.title !== '') {
       this.books = this.books.filter(res => {
         return res.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
       });
