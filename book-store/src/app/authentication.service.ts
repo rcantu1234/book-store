@@ -9,16 +9,16 @@ export class AuthenticationService {
       sessionStorage.setItem('username', username);
       return true;
     } else {
-      alert('The username and password do not match!!!!')
+      alert('The username and password do not match!!!!');
       return false;
     }
   }
   isUserLoggedIn() {
-    const user = sessionStorage.getItem('username')
-    console.log(!(user === null))
-    return !(user === null)
+    const user = sessionStorage.getItem('username');
+    console.log(!(user === null));
+    return !(user === null);
   }
   logOut() {
-    sessionStorage.removeItem('username')
+    sessionStorage.removeItem('username');
   }
 }
