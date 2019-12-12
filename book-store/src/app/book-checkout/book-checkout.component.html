@@ -35,8 +35,11 @@
 
   <div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
     <h2>TOTAL</h2>
-    <h4>${{ receivedTotal | number: '0.0-2' }}</h4>
-
+    <h4 id="myTotal">${{ receivedTotal | number: '0.0-2' }}</h4>
+    <form action="localhost:4200/order/">
+      <td><input type="submit" value="Checkout" onclick="return setData();"></td>
+      <p id="demo"></p>
+    </form>
   </div>
 
 </div>

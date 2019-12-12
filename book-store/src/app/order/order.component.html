@@ -4,6 +4,10 @@
             <div id="order-column" class="col-md-6">
                 <div id="order-box" class="col-md-12">
                   <h3 style="text-align: center; margin-top: 2em;">Order Form</h3>
+                  <div class="col-md-12 pad-adjust">
+                    <td><input type="submit" value="Show My Total" onclick="return getData();"></td>
+                    <h4 id="result" style="color:royalblue"></h4>
+                  </div>
                     <form id="order-form" name="orderForm" class="form" action="" method="post">
                       <div class="form-group"> <!-- Full Name -->
                         <label for="full_name_id" class="control-label">Full Name</label>

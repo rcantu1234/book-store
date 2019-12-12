@@ -7,6 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script>
+    function setData() {
+      var x = document.getElementById("myTotal").innerText;
+      document.getElementById("demo").innerHTML = "Found " + x + " cells in the first tr element.";
+      localStorage.setItem("x", x);
+      // return false;
+    }
+    function getData() {
+      document.getElementById("result").innerHTML = localStorage.getItem("x");
+    }
+  </script>
 </head>
 <body>
   <app-root></app-root>

@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AuthenticationService } from 'src/app/authentication.service';
 import { Order } from 'src/app/models/order';
 import { LoginComponent } from 'src/app/login/login.component';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
-})
-export class NavBarComponent implements OnInit {
 
+})
+
+
+export class NavBarComponent implements OnInit {
   login: LoginComponent;
 
   temp = '';
@@ -36,8 +39,8 @@ export class NavBarComponent implements OnInit {
         // case 'Teacher':
         //     this.teacherLogged = true;
         //     break;
-}
+    }
+  }
 
 
-}
 }

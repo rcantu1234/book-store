@@ -33,13 +33,9 @@ import { OrderComponent } from './order/order.component';
     VanHalenComponent,
     SupermanComponent,
     BookCheckoutComponent,
-
     LoginComponent,
-
     LogoutComponent,
-
     OrderComponent
-
   ],
   imports: [
     BrowserModule,
