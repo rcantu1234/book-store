@@ -1,6 +1,116 @@
+<hr>
+  <table class="table table-striped" id="myTable" >
+    <table class="table table-striped">
+      <thead>
+      <tr style="text-align: center;">
+        <th>Book ID</th>
+        <!-- <th>Book Image</th> -->
+        <th>Book Title</th>
+        <th>Book Author</th>
+        <th>Book Price</th>
+        <th>Remove Book</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="text-align: center;">
+          <td><p id="result1"></p></td>
+          <!-- <td>
+            <div class="col-xs-4">
+                  <a class="nav-link" routerLink="{{ url }}">
+                  <img src="{{ avatar }}" class="img-responsive right"
+                  style="width: 100px; image-rendering: pixelated; z-index: 1;"
+                  alt="logo image"></a>
+            </div>
+          </td> -->
+          <td><p id="result2"></p></td>
+          <td><p id="result3"></p></td>
+          <td><p id="result4"></p></td>
+        <!-- <div *ngFor="let item of showList | keyvalue">
+          Key: <b>{{item.key}}</b> and Value: <b>{{item.value}}</b>
+        </div> -->
+          <td><p><input type="submit" value="Remove"></p></td>
+     </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <!-- <hr style="border-width: 5px;">
+    <div id="total" style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+    <h2>TOTAL</h2>
+    <h4 id="myTotal">${{ receivedTotal | number: '0.0-2' }}</h4>
+    <form>
+      <td> <a class="nav-link" routerLink="/order"><input type="submit" value="Checkout" onclick="return getData();"></a></td>
+    </form> -->
+    <!-- TOTAL<p id="result"></p>
+    <p id="demo"></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+- <hr>
+  <table class="table table-striped" id="myTable">
+    <table class="table table-striped">
+      <thead>
+      <tr style="text-align: center;">
+        <th>Book ID</th>
+        <!- <th>Book Image</th>
+        <th>Book Title</th>
+        <th>Book Author</th>
+        <th>Book Price</th>
+        <th>Remove Book</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="text-align: center;">
+          <td><p id="result1"></p></td>
+          <!- <td>
+            <div class="col-xs-4">
+                  <a class="nav-link" routerLink="{{ url }}">
+                  <img src="{{ avatar }}" class="img-responsive right"
+                  style="width: 100px; image-rendering: pixelated; z-index: 1;"
+                  alt="logo image"></a>
+            </div>
+          </td> ->
+          <td><p id="result2"></p></td>
+          <td><p id="result3"></p></td>
+          <td><p id="result4"></p></td>
+          <td><p><input type="submit" value="Remove"></p></td>
+     </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <hr style="border-width: 5px;">
+    <div id="total" style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+    <h2>TOTAL</h2>
+    <h4 id="myTotal">${{ receivedTotal | number: '0.0-2' }}</h4>
+    <form>
+      <td> <a class="nav-link" routerLink="/order"><input type="submit" value="Checkout" onclick="return getData();"></a></td>
+    </form>
+    TOTAL<p id="result"></p>
+    <p id="demo"></p>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
 <!-- <div *ngIf="receivedTotal > 0"> -->
-  <div *ngIf="receivedTotal > 0">
-    <hr>
+  <!-- <div *ngIf="receivedTotal > 0">
+    <hr> -->
     <!-- <table class="table table-striped">
       <thead>
         <tr style="text-align: center;">
@@ -33,13 +143,13 @@
       <tfoot></tfoot> -->
     <!-- </table>  -->
 
-  <div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
+  <!-- <div style="margin-left: 4em;" *ngIf="receivedTotal > 0">
     <h2>TOTAL</h2>
     <h4 id="myTotal">${{ receivedTotal | number: '0.0-2' }}</h4>
-    <form>
-      <td><a class="nav-link" routerLink="/order"><input type="submit" value="Checkout" onclick="return setData();"></a></td>
+    <form action="localhost:4200/order/">
+      <td><input type="submit" value="Checkout" onclick="return setData();"></td>
       <p id="demo"></p>
     </form>
   </div>
 
-</div>
+</div> -->

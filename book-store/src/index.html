@@ -7,6 +7,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script>
+    function getData() {
+      document.getElementById("result").innerHTML = localStorage.getItem("total");
+      console.log('In Checkout Button');
+    }
+    function getBookRows() {
+      // document.getElementById("result1").innerHTML = localStorage.getItem("showList");
+      // document.getElementById("result2").innerHTML = localStorage.getItem("showList2");
+      // document.getElementById("result3").innerHTML = localStorage.getItem("showList3");
+      // document.getElementById("result4").innerHTML = localStorage.getItem("showList4");
+      document.getElementById("result1").innerHTML = localStorage.getItem("id");
+      document.getElementById("result2").innerHTML = localStorage.getItem("title");
+      document.getElementById("result3").innerHTML = localStorage.getItem("author");
+      document.getElementById("result4").innerHTML = localStorage.getItem("price");
+    }
+ </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BookStore</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script>
+    function setData() {
+      var total = document.getElementById("myTotal").innerText;
+      document.getElementById("demo").innerHTML = "Found " + total + " cells in the first tr element.";
+      localStorage.setItem("total", total);
+      return false;
+    }
+      // document.getElementById("result1").innerHTML = localStorage.getItem("id");
+    function getData() {
+      document.getElementById("result").innerHTML = localStorage.getItem("total");
+      console.log('In Checkout Button');
+    }
+    function setBookRows() {
+      var id = document.getElementById("id").innerText;
+      var title = document.getElementById("title").innerText;
+      var author = document.getElementById("author").innerText;
+      var price = document.getElementById("price").innerText;
+      var total = document.getElementById("myTotal").innerText;
+      document.getElementById("demo1").innerHTML = "Found " + id + " cells in the first tr element.";
+      document.getElementById("demo2").innerHTML = "Found " + title + " cells in the first tr element.";
+      document.getElementById("demo3").innerHTML = "Found " + author + " cells in the first tr element.";
+      document.getElementById("demo4").innerHTML = "Found " + price + " cells in the first tr element.";
+      console.log(id);
+      console.log(title);
+      console.log(author);
+      console.log(price);
+      return false;
+    }
+    function getBookRows() {
+      document.getElementById("result1").innerHTML = localStorage.getItem("id");
+      document.getElementById("result2").innerHTML = localStorage.getItem("title");
+      document.getElementById("result3").innerHTML = localStorage.getItem("author");
+      document.getElementById("result4").innerHTML = localStorage.getItem("price");
+    }
+ </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html> -->
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BookStore</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script>
+    // function setData() {
+    //   var total = document.getElementById("myTotal").innerText;
+    //   document.getElementById("demo").innerHTML = "Found " + total + " cells in the first tr element.";
+    //   localStorage.setItem("total", total);
+    //   return false;
+    // }
+      // document.getElementById("result1").innerHTML = localStorage.getItem("id");
+    function getData() {
+      document.getElementById("result").innerHTML = localStorage.getItem("total");
+      console.log('In Checkout Button');
+    }
+    // function setBookRows() {
+    //   var id = document.getElementById("id").innerText;
+    //   var title = document.getElementById("title").innerText;
+    //   var author = document.getElementById("author").innerText;
+    //   var price = document.getElementById("price").innerText;
+    //   var total = document.getElementById("myTotal").innerText;
+    //   document.getElementById("demo1").innerHTML = "Found " + id + " cells in the first tr element.";
+    //   document.getElementById("demo2").innerHTML = "Found " + title + " cells in the first tr element.";
+    //   document.getElementById("demo3").innerHTML = "Found " + author + " cells in the first tr element.";
+    //   document.getElementById("demo4").innerHTML = "Found " + price + " cells in the first tr element.";
+    //   console.log(id);
+    //   console.log(title);
+    //   console.log(author);
+    //   console.log(price);
+    //   return false;
+    // }
+    function getBookRows() {
+      document.getElementById("result1").innerHTML = localStorage.getItem("id");
+      document.getElementById("result2").innerHTML = localStorage.getItem("title");
+      document.getElementById("result3").innerHTML = localStorage.getItem("author");
+      document.getElementById("result4").innerHTML = localStorage.getItem("price");
+    }
+ </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+
+
+
+<! <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BookStore</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <script>
     function setData() {
@@ -23,4 +171,4 @@
 <body>
   <app-root></app-root>
 </body>
-</html>
+</html> -->
